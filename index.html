@@ -25,16 +25,27 @@
       <button id="export_but" disabled>EXPORT</button>
     </div>
   </header>
+  <div class="error_area"></div>
   <article class="blomaga">
     <h2 class="viewer_default">使い方</h2>
-    <p>IMPORTボタンよりHTMLデータをセットしてください。</p>
-    <p>詳細は AyumuNekozuki まで。</p>
+    <ol>
+      <li>HTML化ファイルを作成します。（拡張子は .html .txt など）</li>
+      <li>右上の IMPORT ボタンをクリックします</li>
+      <li>作成したデータを選択し 実行 をクリックします</li>
+      <li>描画されます。</li>
+    </ol>
+    <ul>
+      <li>scriptタグが存在する場合、意図しないスクリプトの実行を防ぐため確認ダイアログが出てきます。</li>
+      <li>チャンネルブロマガで利用できないタグ・絵文字等を検知した場合、エラーとして表示されますが、描画はされてしまいます。</li>
+      <li>チャンネルブロマガで利用できないCSSは判定されずエラーとして表示されません</li>
+      <li>わからない点あれば AyumuNekozuki まで。</li>
+    </ul>
 
     <h2 class="viewer_default">最終更新</h2>
     <p>2021.10.16</p>
-    <ul>
-      <li>初版作成</li>
-    </ul>
+
+    <h2 class="viewer_default">GitHub</h2>
+    <p><a href="https://github.com/nico-smiles/blomaga-viewer" target="_blank" rel="noopener noreferrer">こちら</a></p>
   </article>
 
 

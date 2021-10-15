@@ -123,3 +123,13 @@ button:disabled{
   background-color: #999 !important;
   color: #ccc !important;
 }
+
+.error_area{
+  margin: 0 auto;
+  width: 680px;
+  padding: 5px 25px;
+}
+.error_area p{
+  color: red;
+  margin: .25em 0;
+}
