@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blomaga Style Viewer</title>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <link rel="stylesheet" href="style/blomaga_HTML_maker.css">
+  <link rel="stylesheet" href="style/blomaga_template.css">
+  <script src="import_data.js"></script>
+</head>
+
+<body>
+  <header id="maker_header">
+    <h1></h1>
+    <div class="button_area">
+      <a id="import_but" href="#importer" rel="modal:open">IMPORT</a>
+      <button id="export_but" disabled>EXPORT</button>
+    </div>
+  </header>
+  <article class="blomaga">
+    <h2 class="viewer_default">使い方</h2>
+    <p>IMPORTボタンよりHTMLデータをセットしてください。</p>
+    <p>詳細は AyumuNekozuki まで。</p>
+
+    <h2 class="viewer_default">最終更新</h2>
+    <p>2021.10.16</p>
+    <ul>
+      <li>初版作成</li>
+    </ul>
+  </article>
+
+
+  <div id="importer" class="modal">
+    <h2>HTMLファイルインポート</h2>
+    <p class="desc">HTMLファイルをインポートしてください</p>
+    <div class="file_input_wrap">
+      <input type="file" name="html_input" id="html_input">
+      <button id="html_input_submit">実行</button>
+    </div>
+
+    <h2>JSファイルインポート</h2>
+    <p class="desc">この機能は準備中です</p>
+    <div class="file_input_wrap">
+      <input disabled type="file" name="html_input" id="html_input">
+      <button disabled>実行</button>
+    </div>
+  </div>
+</body>
+
+</html>
