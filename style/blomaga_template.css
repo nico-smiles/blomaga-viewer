@@ -1,121 +1,127 @@
-/* 以下 COPY */
+/* 公式CSSよりCOPY */
+/* 最終更新 2021.10.16 02:56:00 */
 
-article.blomaga{
-    color: #000;
-    font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif !important;/* stylelint-disable-line */
-    font-size: 16px;
-    line-height: 1.6;
-    white-space: normal;
-    width: 680px;
-    word-break: normal;
-    word-wrap: break-word;
+@charset "utf-8";
+article.blomaga {
+  color: #000;
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif!important;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: normal;
+  width: 680px;
+  word-break: normal;
+  word-wrap: break-word
 }
 
 article.blomaga a {
-    color: #000;
-    text-decoration: underline !important;/* stylelint-disable-line */
+  color: #000;
+  text-decoration: underline!important
 }
 
 article.blomaga img {
-    margin: 0;
-    max-width: 680px;
-    padding: 0;
+  margin: 0;
+  max-width: 680px;
+  padding: 0
 }
 
 article.blomaga img.attached_image {
-    /* 画像APIで表示される画像 jsによりクリック可能になる */
-    cursor: pointer;
+  cursor: pointer
 }
 
-article.blomaga h1,
-article.blomaga h2,
-article.blomaga h3,
-article.blomaga h4,
-article.blomaga h5,
-article.blomaga h6 {
-    font-weight: normal;
-    margin: 1em 0 .5em;
+article.blomaga h1, article.blomaga h2, article.blomaga h3, article.blomaga h4, article.blomaga h5, article.blomaga h6 {
+  font-weight: normal;
+  margin: 1em 0 0.5em
 }
 
 article.blomaga h1 {
-    font-size: 34px;
+  font-size: 34px
 }
 
 article.blomaga h2 {
-    font-size: 28px;
+  font-size: 28px
 }
 
 article.blomaga h3 {
-    font-size: 24px;
+  font-size: 24px
 }
 
 article.blomaga h4 {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold
 }
 
 article.blomaga h5 {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold
 }
 
 article.blomaga h6 {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold
 }
 
 article.blomaga p {
-    margin: 1em 0;
-    padding: 0;
+  margin: 1em 0;
+  padding: 0
 }
 
 article.blomaga em {
-    font-style: italic; /** メイリオもイタリックない **/
+  font-style: italic
 }
 
 article.blomaga ul {
-    list-style-type: disc;
+  list-style-type: disc
 }
 
-article.blomaga ul,
-article.blomaga ol {
-    margin: 1em 0;
-    padding: 0;
+article.blomaga ul, article.blomaga ol {
+  margin: 1em 0;
+  padding: 0
 }
 
-article.blomaga ul li,
-article.blomaga ol li {
-    list-style-position: inside;
-    padding-left: 1em;
+article.blomaga ul li, article.blomaga ol li {
+  list-style-position: inside;
+  padding-left: 1em
 }
 
 article.blomaga blockquote {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    margin: 20px;
-    padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px
 }
 
 article.blomaga .asciiart {
-    display: block;
-    font-size: 12pt;
-    line-height: normal;
-    padding: 10px;
-    text-align: left;
+  display: block;
+  font-size: 12pt;
+  line-height: normal;
+  padding: 10px;
+  text-align: left
 }
 
-article.blomaga .asciiart * {/* stylelint-disable-line */
-    background: none !important;/* stylelint-disable-line */
-    border: none !important;/* stylelint-disable-line */
-    font-size: inherit !important;/* stylelint-disable-line */
-    line-height: inherit !important;/* stylelint-disable-line */
+article.blomaga .asciiart * {
+  background: none!important;
+  border: none!important;
+  font-size: inherit!important;
+  line-height: inherit!important
 }
 
-article.blomaga .asciiart, article.blomaga .asciiart * {/* stylelint-disable-line */
-    font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'Mona', 'mona-gothic-jisx0208.1990-0', 'IPA モナー Pゴシック', 'IPAMonaPGothic', sans-serif !important;/* stylelint-disable-line */
+article.blomaga .asciiart, article.blomaga .asciiart * {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "Mona", "mona-gothic-jisx0208.1990-0", "IPA モナー Pゴシック", "IPAMonaPGothic", sans-serif!important
 }
 
 article.blomaga .asciiart.small {
-    font-size: 9pt;
+  font-size: 9pt
 }
 
+#tinymcearticle.blomaga .asciiart {
+  background: url("../../../img/tool/blomaga/asciiart_area.png") no-repeat;
+  border: dotted 4px #ddd;
+  border-radius: 5px;
+  min-height: 1em;
+  padding: 30px 5px 10px
+}
+
+#tinymcearticle.blomaga .asciiart.small {
+  border-width: 2px;
+  padding: 30px 8px 10px
+}
